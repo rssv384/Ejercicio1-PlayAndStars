@@ -1,0 +1,20 @@
+/* USO TEMPORAL. ELIMINAR SECCIÓN AL FINAL DEL PROYECTO */
+#PALETA_DE_COLORES {
+	color: #881b21 #f2f2f2 #952d33 #060503;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: #060503;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #f2f2f2;
+}
