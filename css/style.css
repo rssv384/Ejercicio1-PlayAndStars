@@ -3,6 +3,7 @@
 	color: #881b21 #f2f2f2 #952d33 #060503;
 }
 
+/* GENERAL */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -19,6 +20,7 @@ body {
 	color: #f2f2f2;
 }
 
+/* HEADER */
 header {
 	display: flex;
 	flex-direction: row;
@@ -70,10 +72,45 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: #952d33;
+	color: #881b21;
 }
 
 nav li:hover {
 	background-color: rgba(26, 25, 23, 0.5);
 	border-radius: 10px;
+}
+
+/* CONTENIDO */
+main {
+	padding-top: 80px;
+}
+
+section {
+	display: block;
+	/* Section height = Viewport height - header height */
+	height: calc(100vh - 80px);
+	scroll-margin-top: 80px;
+	padding: 50px 80px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #881b21;
+}
+
+h2 {
+	font-size: 2rem;
+	color: #881b21;
+}
+h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #952d33;
 }
