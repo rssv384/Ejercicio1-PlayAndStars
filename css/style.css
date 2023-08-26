@@ -94,7 +94,7 @@ section {
 	/* Section height = Viewport height - header height */
 	height: calc(100vh - 80px);
 	/* height: 100vh; */
-	/* scroll-margin-top: 80px; */
+	scroll-margin-top: 80px;
 	padding: 50px 80px;
 }
 
@@ -204,4 +204,33 @@ footer hr {
 
 .copyright > a {
 	color: #952d33;
+}
+
+#btn-ir-arriba {
+	cursor: pointer;
+
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	border: none;
+	background-color: #952d33;
+
+	box-shadow: 0px 12px 7px rgba(149, 45, 51, 0.25);
+	transition: 100ms ease;
+}
+
+#btn-ir-arriba:hover {
+	background-color: #881b21;
+	transform: translateY(-0.5rem);
+}
+
+#btn-ir-arriba svg {
+	stroke: #ffffff;
+	stroke-width: 2px;
+	width: 25px;
+	fill: none;
 }
