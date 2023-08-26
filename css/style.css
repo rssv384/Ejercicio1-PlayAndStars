@@ -1,6 +1,6 @@
 /* USO TEMPORAL. ELIMINAR SECCIÓN AL FINAL DEL PROYECTO */
 #PALETA_DE_COLORES {
-	color: #881b21 #f2f2f2 #952d33 #100f0d;
+	color: #d1c3aa #3a383f #a2917a #4c3f33;
 }
 
 /* GENERAL */
@@ -12,12 +12,12 @@
 }
 
 body {
-	background-color: #100f0d;
+	background-color: #d1c3aa;
 
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
-	color: #f2f2f2;
+	color: #3a383f;
 }
 
 p {
@@ -37,8 +37,8 @@ header {
 	width: 100%;
 	height: 80px;
 
-	background: #100f0d;
-	box-shadow: 0 1px 3px rgba(149, 45, 51, 0.75);
+	background: #d1c3aa;
+	box-shadow: 0 1px 3px rgba(58, 56, 63, 0.75);
 }
 
 #logo {
@@ -76,11 +76,11 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: #952d33;
+	color: #3a383f;
 }
 
 nav li:hover {
-	background-color: rgba(26, 25, 23, 0.5);
+	background-color: rgba(162, 145, 122, 0.5);
 	border-radius: 10px;
 }
 
@@ -99,7 +99,7 @@ section {
 }
 
 section > hr {
-	border-top: 7px solid #881b21;
+	border-top: 7px solid #3a383f;
 	width: 3rem;
 	margin: auto;
 }
@@ -109,23 +109,21 @@ h2,
 h3 {
 	font-family: 'Playfair Display', serif;
 	margin: 10px 0px;
+	color: #4c3f33;
 }
 
 h1 {
 	font-size: 7rem;
 	font-weight: 600;
-	color: #881b21;
 }
 
 h2 {
 	font-size: 3rem;
 	font-weight: 600;
-	color: #881b21;
 }
 h3 {
 	font-size: 2rem;
 	font-weight: 400;
-	color: #952d33;
 }
 
 #home {
@@ -164,8 +162,10 @@ h3 {
 	height: 5rem;
 }
 
+.home-banner h1,
 .home-banner h2 {
 	color: #f2f2f2;
+	text-align: center;
 }
 
 /* FOOTER */
@@ -188,12 +188,12 @@ footer .col {
 }
 
 footer hr {
-	border-top: 1px solid #952d33;
+	border-top: 1px solid #4c3f33;
 	margin: 20px 0px;
 }
 
 .copyright {
-	color: #f2f2f2;
+	color: #3a383f;
 	font-size: 0.75rem;
 	font-weight: 300;
 
@@ -203,7 +203,7 @@ footer hr {
 }
 
 .copyright > a {
-	color: #952d33;
+	color: #4c3f33;
 }
 
 #btn-ir-arriba {
@@ -217,14 +217,14 @@ footer hr {
 	width: 50px;
 	border-radius: 25px;
 	border: none;
-	background-color: #952d33;
+	background-color: #4c3f33;
 
-	box-shadow: 0px 12px 7px rgba(149, 45, 51, 0.25);
+	box-shadow: 0px 12px 7px rgba(76, 63, 51, 0.25);
 	transition: 100ms ease;
 }
 
 #btn-ir-arriba:hover {
-	background-color: #881b21;
+	background-color: #a2917a;
 	transform: translateY(-0.5rem);
 }
 
