@@ -89,6 +89,12 @@ main {
 	padding-top: 80px;
 }
 
+main hr {
+	border-top: 7px solid #622a37;
+	width: 3rem;
+	margin: auto;
+}
+
 section {
 	display: block;
 	/* Section height = Viewport height - header height */
@@ -96,12 +102,6 @@ section {
 	/* height: 100vh; */
 	scroll-margin-top: 80px;
 	padding: 50px 80px;
-}
-
-section > hr {
-	border-top: 7px solid #622a37;
-	width: 3rem;
-	margin: auto;
 }
 
 h1,
