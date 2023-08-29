@@ -20,10 +20,7 @@ body {
 	color: #344150;
 }
 
-p {
-	margin: 10px 0px;
-}
-
+/* #region HEADER */
 /* HEADER */
 header {
 	display: flex;
@@ -83,8 +80,9 @@ nav li:hover {
 	background-color: rgba(225, 198, 160, 0.15);
 	border-radius: 10px;
 }
+/* endregion */
 
-/* CONTENIDO */
+/* #endregion MAIN */
 main {
 	padding-top: 80px;
 }
@@ -92,9 +90,11 @@ main {
 main hr {
 	border-top: 7px solid #622a37;
 	width: 3rem;
-	margin: auto;
+	margin: 0 auto;
 }
+/* #endregion */
 
+/* #region SECTIONS */
 section {
 	display: block;
 	/* Section height = Viewport height - header height */
@@ -103,7 +103,9 @@ section {
 	scroll-margin-top: 80px;
 	padding: 50px 80px;
 }
+/* #endregion */
 
+/* #region HEADINGS */
 h1,
 h2,
 h3 {
@@ -125,7 +127,9 @@ h3 {
 	font-size: 2rem;
 	font-weight: 400;
 }
+/* #endregion */
 
+/* #region HOME */
 #home {
 	display: flex;
 	justify-content: center;
@@ -166,9 +170,63 @@ h3 {
 .home-banner h2 {
 	color: #f2f2f2;
 	text-align: center;
+	margin: 0 auto;
+}
+/* #endregion */
+
+/* #region FILM CARDS */
+.films-row {
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+
+	gap: 2rem;
 }
 
-/* FOOTER */
+.film {
+	max-width: 300px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	padding: 5px 5px;
+
+	box-shadow: hsl(346, 40%, 85%);
+}
+
+.film-poster {
+	/* height: 300px; */
+	width: 225px;
+
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.film-poster img {
+	height: 300px;
+	width: 200px;
+	margin: auto;
+
+	border-radius: 10px;
+}
+
+.star-rating {
+	color: #622a37;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.film:hover {
+	transform: translateY(-0.5rem);
+}
+/* #endregion */
+
+/* #region FOOTER */
 footer {
 	height: fit-content;
 	padding: 30px 80px;
@@ -177,13 +235,13 @@ footer {
 	flex-direction: column;
 }
 
-footer .row {
+.footer-row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-footer .col {
+.footer-col {
 	width: 40vw;
 }
 
@@ -205,7 +263,9 @@ footer hr {
 .copyright > a {
 	color: #622a37;
 }
+/* #endregion */
 
+/* #region FLOATING BUTTON */
 #btn-ir-arriba {
 	cursor: pointer;
 
@@ -234,3 +294,4 @@ footer hr {
 	width: 25px;
 	fill: none;
 }
+/* #endregion */

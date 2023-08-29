@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <a id="logo" onclick="redirectToHome()"><img src="/img/logo.png" alt="Play&Stars Logo"></a>
+            <a id="logo" onclick="redirectToHome()"><img src="/img/logo.png" title="Play & Stars Logo"></a>
             <ul>
                 <li><a href="#destacadas">Destacadas</a></li>
                 <li><a href="#estrella-de-la-semana">Estrella de la Semana</a></li>
@@ -38,7 +38,93 @@
         <section id="destacadas">
             <hr>
             <h2>Películas Destacadas</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio culpa quia saepe velit magnam. Eligendi, sunt blanditiis ab consequatur in, eos ad accusantium commodi deleniti quasi culpa soluta! Accusantium, magnam.</p>
+            <div class="films-row">
+                <div class="film">
+                    <div class="film-poster">
+                        <img src="/img/posters/cries-and-whispers.jpg" title="Cries & Whispers">
+                    </div>
+                    <div class="film-info">
+                        <div class="film-title">
+                            <h3>Cries & Whispers</h3>
+                        </div>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="film">
+                    <div class="film-poster">
+                        <img src="/img/posters/woman-in-the-dunes.jpg" title="Woman in the Dunes">
+                    </div>
+                    <div class="film-info">
+                        <div class="film-title">
+                            <h3>Woman in the Dunes</h3>
+                        </div>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="film">
+                    <div class="film-poster">
+                        <img src="/img/posters/girl-with-hyacinths.jpg" title="Girl with Hyacinths">
+                    </div>
+                    <div class="film-info">
+                        <div class="film-title">
+                            <h3>Girl with Hyacinths</h3>
+                        </div>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="film">
+                    <div class="film-poster">
+                        <img src="/img/posters/persona.jpg" title="Persona">
+                    </div>
+                    <div class="film-info">
+                        <div class="film-title">
+                            <h3>Persona</h3>
+                        </div>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="film">
+                    <div class="film-poster">
+                        <img src="/img/posters/the-apartment.jpg" title="The Apartment">
+                    </div>
+                    <div class="film-info">
+                        <div class="film-title">
+                            <h3>The Apartment</h3>
+                        </div>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="estrella-de-la-semana">
             <hr>
@@ -59,13 +145,13 @@
     </main>
     
     <footer>
-        <div class="row">
-            <div id="contacto" class="col">
+        <div id="contacto" class="footer-row">
+            <div class="footer-col">
                 <h2>Contáctanos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni consequuntur repellat sequi molestiae hic laboriosam, earum, dolorum saepe nemo fuga vitae qui itaque nisi nihil eum error rem enim. Quasi?</p>
             </div>
             
-            <div class="col">
+            <div class="footer-col">
                 <h2>Nuestras Redes Sociales</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis laudantium adipisci consequatur vitae hic placeat, tenetur exercitationem impedit porro aut et deleniti, ut excepturi rerum tempore, corporis consectetur mollitia animi.</p>
             </div>
