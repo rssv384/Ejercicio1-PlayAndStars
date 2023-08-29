@@ -1,6 +1,6 @@
 /* USO TEMPORAL. ELIMINAR SECCIÓN AL FINAL DEL PROYECTO */
 #PALETA_DE_COLORES {
-	color: #c7b69e #344150 #e1c6a0 #3a5d56 #622a37;
+	color: #c7b69e #344150 #b59e7d #3a5d56 #622a37;
 }
 
 /* GENERAL */
@@ -77,7 +77,7 @@ nav a {
 }
 
 nav li:hover {
-	background-color: rgba(225, 198, 160, 0.15);
+	background-color: rgba(181, 158, 125, 0.25);
 	border-radius: 10px;
 }
 /* endregion */
@@ -175,7 +175,7 @@ h3 {
 /* #endregion */
 
 /* #region FILM CARDS */
-.films-row {
+.films-container {
 	display: flex;
 	flex-direction: row;
 	padding-top: 20px;
@@ -183,7 +183,7 @@ h3 {
 	gap: 2rem;
 }
 
-.film {
+.film-card {
 	max-width: 300px;
 
 	display: flex;
@@ -192,8 +192,11 @@ h3 {
 	text-align: center;
 
 	padding: 5px 5px;
-
+	border-radius: 10px;
 	box-shadow: hsl(346, 40%, 85%);
+
+	cursor: pointer;
+	font-weight: 600;
 }
 
 .film-poster {
@@ -205,14 +208,13 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 1rem;
 }
 
 .film-poster img {
 	height: 300px;
 	width: 200px;
 	margin: auto;
-
-	border-radius: 10px;
 }
 
 .star-rating {
@@ -221,7 +223,8 @@ h3 {
 	font-weight: 600;
 }
 
-.film:hover {
+.film-card:hover {
+	background-color: hsl(35, 27%, 65%);
 	transform: translateY(-0.5rem);
 }
 /* #endregion */
@@ -230,6 +233,8 @@ h3 {
 footer {
 	height: fit-content;
 	padding: 30px 80px;
+
+	background-color: hsl(35, 27%, 60%);
 
 	display: flex;
 	flex-direction: column;
@@ -267,6 +272,8 @@ footer hr {
 .icon {
 	width: 45px;
 	margin: 0 1rem;
+
+	cursor: pointer;
 }
 /* #endregion */
 
