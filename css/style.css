@@ -263,6 +263,11 @@ footer hr {
 .copyright a {
 	color: #622a37;
 }
+
+.icon {
+	width: 45px;
+	margin: 0 1rem;
+}
 /* #endregion */
 
 /* #region FLOATING BUTTON */
