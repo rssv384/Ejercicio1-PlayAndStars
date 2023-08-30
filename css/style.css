@@ -202,7 +202,6 @@ section:not(#home) {
 	box-shadow: hsl(346, 40%, 85%);
 
 	cursor: pointer;
-	font-weight: 600;
 }
 
 .film-poster {
@@ -233,6 +232,18 @@ section:not(#home) {
 	background-color: hsl(35, 27%, 65%);
 	transform: translateY(-0.5rem);
 }
+
+/* #region AWARD WINNING */
+.awards {
+	color: #622a37;
+	font-weight: 400;
+}
+
+.award-icon {
+	font-size: 1.5rem;
+}
+/* #endregion */
+
 /* #endregion */
 
 /* #region STAR OF THE WEEK */
