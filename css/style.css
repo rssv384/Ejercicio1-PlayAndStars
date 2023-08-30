@@ -20,6 +20,30 @@ body {
 	color: #344150;
 }
 
+/* #region HEADINGS */
+h1,
+h2,
+h3 {
+	font-family: 'Playfair Display', serif;
+	margin: 10px 0px;
+	color: #3a5d56;
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+h3 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+/* #endregion */
+
 /* #region HEADER */
 /* HEADER */
 header {
@@ -83,6 +107,8 @@ nav li:hover {
 /* endregion */
 
 /* #endregion MAIN */
+
+/* #region MAIN */
 main {
 	padding-top: 80px;
 }
@@ -99,33 +125,13 @@ section {
 	display: block;
 	/* Section height = Viewport height - header height */
 	height: calc(100vh - 80px);
-	/* height: 100vh; */
+
 	scroll-margin-top: 80px;
 	padding: 50px 80px;
 }
-/* #endregion */
 
-/* #region HEADINGS */
-h1,
-h2,
-h3 {
-	font-family: 'Playfair Display', serif;
-	margin: 10px 0px;
-	color: #3a5d56;
-}
-
-h1 {
-	font-size: 7rem;
-	font-weight: 600;
-}
-
-h2 {
-	font-size: 3rem;
-	font-weight: 600;
-}
-h3 {
-	font-size: 2rem;
-	font-weight: 400;
+section:not(#home) {
+	height: fit-content;
 }
 /* #endregion */
 
@@ -226,6 +232,66 @@ h3 {
 .film-card:hover {
 	background-color: hsl(35, 27%, 65%);
 	transform: translateY(-0.5rem);
+}
+/* #endregion */
+
+/* #region STAR OF THE WEEK */
+.star-container {
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+}
+
+.star-profile {
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	align-items: center;
+
+	padding: 1rem;
+	margin: 2rem 0;
+	gap: 3rem;
+}
+
+.star-bio {
+	width: 800px;
+}
+
+.portrait img {
+	height: 250px;
+	border-radius: 30%;
+}
+
+.comments {
+	width: auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	gap: 2rem;
+}
+
+.comment {
+	max-width: 400px;
+	height: 100%;
+	padding: 15px 15px;
+
+	font-style: italic;
+	color: #3a5d56;
+}
+
+.comment-by {
+	margin: 0.5rem 1rem;
+
+	font-weight: 600;
+	text-align: right;
+}
+
+.quotation-mark {
+	font-weight: 600;
 }
 /* #endregion */
 
