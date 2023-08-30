@@ -195,7 +195,6 @@ section:not(#home) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 
 	padding: 5px 5px;
 	border-radius: 10px;
@@ -222,6 +221,10 @@ section:not(#home) {
 	margin: auto;
 }
 
+.film-info {
+	text-align: center;
+}
+
 .star-rating {
 	color: #622a37;
 	font-size: 1.25rem;
@@ -236,6 +239,7 @@ section:not(#home) {
 /* #region AWARD WINNING */
 .awards {
 	color: #622a37;
+	font-size: 1rem;
 	font-weight: 400;
 }
 
