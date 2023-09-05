@@ -190,22 +190,24 @@ section:not(#home) {
 }
 
 .film-card {
-	max-width: 300px;
+	width: 300px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 
 	padding: 5px 5px;
 	border-radius: 10px;
-	box-shadow: hsl(346, 40%, 85%);
-
 	cursor: pointer;
+
+	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	position: relative;
 }
 
 .film-poster {
-	/* height: 300px; */
-	width: 225px;
+	width: 100%;
 
 	border-radius: 10px;
 
@@ -221,19 +223,12 @@ section:not(#home) {
 	margin: auto;
 }
 
-.film-info {
-	text-align: center;
-}
-
 .star-rating {
 	color: #622a37;
 	font-size: 1.25rem;
 	font-weight: 600;
-}
 
-.film-card:hover {
-	background-color: hsl(35, 27%, 65%);
-	transform: translateY(-0.5rem);
+	margin-bottom: 1rem;
 }
 
 /* #region AWARD WINNING */
@@ -241,11 +236,48 @@ section:not(#home) {
 	color: #622a37;
 	font-size: 1rem;
 	font-weight: 400;
+
+	margin-bottom: 1rem;
 }
 
 .award-icon {
 	font-size: 1.5rem;
 }
+
+.fecha-estreno {
+	width: 200px;
+	padding: 5px;
+	margin-bottom: 1rem;
+	background-color: #622a37;
+	color: hsl(212, 21%, 60%);
+}
+
+.synopsis {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+	transition: all 0.5s ease-in-out;
+	padding: 40px 25px;
+	box-sizing: border-box;
+	clip-path: circle(0% at 100% 100%);
+
+	color: hsl(212, 21%, 50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	font-size: 16px;
+}
+
+.film-card:hover .synopsis {
+	transition: all 0.5s ease-in-out;
+	clip-path: circle(75%);
+}
+
+.film-card:hover .film-poster {
+	filter: blur(10px);
+}
+
 /* #endregion */
 
 /* #endregion */
