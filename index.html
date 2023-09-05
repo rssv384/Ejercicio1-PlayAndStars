@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <!--- Font Awesome Icons --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--- JavaScript--->
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -222,18 +224,24 @@
     </main>
     
     <footer>
-        <div id="contacto" class="footer-row">
-            <div class="footer-col">
+        <div id="contacto" class="contact-container">
+            <div class="contact-form-container">
                 <h2>Contáctanos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni consequuntur repellat sequi molestiae hic laboriosam, earum, dolorum saepe nemo fuga vitae qui itaque nisi nihil eum error rem enim. Quasi?</p>
+                
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Nombre" required>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <textarea id="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+
             </div>
             
-            <div class="footer-col">
+            <div class="sns-container">
                 <h2>Nuestras Redes Sociales</h2>
-                <a href="#"><img class="icon" src="/img/icons/facebook.png" alt=""></a>
-                <a href="#"><img class="icon" src="/img/icons/instagram.png" alt=""></a>
-                <a href="#"><img class="icon" src="/img/icons/twitter.png" alt=""></a>
-                <a href="#"><img class="icon" src="/img/icons/youtube.png" alt=""></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-2xl fa-x-twitter"></i></a>
             </div>
         </div>
         <hr>

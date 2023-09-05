@@ -353,14 +353,64 @@ footer {
 	flex-direction: column;
 }
 
-.footer-row {
+#contact-form {
+	width: 500px;
+	max-width: 100%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 0;
+}
+
+input,
+textarea {
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 5px;
+	border: 1px solid #344150;
+	border-radius: 5px;
+	color: #344150;
+}
+
+.btn {
+	cursor: pointer;
+
+	background-color: #344150;
+	color: #f2f2f2;
+	font-size: 1.25rem;
+	width: fit-content;
+	height: 40px;
+	padding: 0 2rem;
+	border: none;
+	border-radius: 20px;
+	transition: color 0.5s;
+}
+
+.btn:hover {
+	background-color: hsl(212, 21%, 50%);
+}
+
+.contact-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.footer-col {
+.contact-form-container,
+.sns-container {
 	width: 40vw;
+	align-items: center;
+}
+
+.sns-container a {
+	margin-right: 2rem;
+}
+
+.sns-container i {
+	color: #344150;
 }
 
 footer hr {
