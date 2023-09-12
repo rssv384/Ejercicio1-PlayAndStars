@@ -15,13 +15,6 @@ novedades y ranking de películas. Requiere un sitio que le permita navegar din�
 
 ### Secciones Extra:
 - Próximos estrenos
-- Recomendación semanal (Planeada, aún no implementada)
-
+- 
 ## Tecnologías
 Utilizar **Vanilla JS** para el desarrollo de un sitio web estático (*HTML* + *CSS* + *Javascript*).
-
-## Características Planeadas
-- Flip cards para películas
-- Carousel de películas
-- Sección *Recomendación de la Semana*
-- Formulario de contacto
