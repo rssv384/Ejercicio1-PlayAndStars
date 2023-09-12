@@ -49,6 +49,38 @@ p {
 }
 /* #endregion */
 
+/* #region FLEX STYLES */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-content-space-between {
+	justify-content: space-between;
+}
+
+.flex-content-center {
+	justify-content: center;
+}
+
+.flex-align-items-center {
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.sm-hide {
+	display: none;
+}
+/* #endregion */
+
 /* #region HEADINGS */
 h1,
 h2,
@@ -76,12 +108,7 @@ h3 {
 /* #region HEADER */
 /* HEADER */
 header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-
-	z-index: 8;
+	z-index: 1;
 
 	position: fixed;
 	width: 100%;
@@ -94,7 +121,6 @@ header {
 #logo {
 	height: 60px;
 	width: auto;
-	display: flex;
 	margin: 10px;
 }
 
@@ -106,18 +132,12 @@ header {
 nav {
 	height: var(--nav-height);
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
 	font-family: var(--body-font);
 	font-size: 1.3rem;
 	font-weight: var(--body-font-weight-bold);
 }
 
 nav ul {
-	display: flex;
-	justify-content: space-evenly;
 	list-style: none;
 }
 
@@ -165,10 +185,6 @@ section:not(#home) {
 
 /* #region HOME */
 #home {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
 	background: url('/img/home-banner.png') no-repeat center center fixed;
 	background-size: cover;
 
@@ -177,16 +193,11 @@ section:not(#home) {
 }
 
 .home-banner {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	gap: 1rem;
+	padding: 1rem;
 
 	background-color: var(--shadow-color-dark);
 	opacity: 0.9;
-
-	padding: 1rem;
 
 	/* Fuente: https://stackoverflow.com/a/30291576 */
 	position: absolute;
@@ -203,28 +214,18 @@ section:not(#home) {
 .home-banner h1,
 .home-banner h2 {
 	color: var(--color-white);
-	text-align: center;
 	margin: 0 auto;
 }
 /* #endregion */
 
 /* #region FILM CARDS */
 .card-container {
-	display: flex;
-	flex-direction: row;
 	padding-top: 20px;
-
 	gap: 2rem;
 }
 
 .card {
 	width: 300px;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-
 	padding: 5px 5px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -236,12 +237,7 @@ section:not(#home) {
 
 .poster {
 	width: 100%;
-
 	border-radius: 10px;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	margin-top: 1rem;
 }
 
@@ -308,19 +304,12 @@ section:not(#home) {
 
 /* #region STAR OF THE WEEK */
 .star-container {
-	display: flex;
-	flex-direction: column;
 	height: fit-content;
 }
 
 .star-profile {
 	height: 100%;
-
-	display: flex;
-	flex-direction: row;
 	position: relative;
-	align-items: center;
-
 	gap: 3rem;
 }
 
@@ -335,11 +324,6 @@ section:not(#home) {
 
 .comments {
 	width: auto;
-
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-
 	gap: 2rem;
 }
 
@@ -368,11 +352,21 @@ section:not(#home) {
 footer {
 	height: fit-content;
 	padding: 30px 80px;
-
 	background-color: var(--background-color-dark);
+}
 
-	display: flex;
-	flex-direction: column;
+.contact-container {
+	gap: 2rem;
+}
+
+.contact-form-container,
+.sns-container {
+	width: 40vw;
+	align-items: center;
+}
+
+.sns-container i {
+	color: var(--primary-color);
 }
 
 #contact-form {
@@ -381,9 +375,6 @@ footer {
 }
 
 form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	margin: 10px 0;
 }
 
@@ -415,23 +406,6 @@ textarea {
 	background-color: var(--primary-color-light);
 }
 
-.contact-container {
-	display: flex;
-	flex-direction: row;
-	/* justify-content: space-between; */
-	gap: 2rem;
-}
-
-.contact-form-container,
-.sns-container {
-	width: 40vw;
-	align-items: center;
-}
-
-.sns-container i {
-	color: var(--primary-color);
-}
-
 footer hr {
 	border-top: 2px solid var(--tertiary-color);
 	margin: 20px 0px;
@@ -441,10 +415,6 @@ footer hr {
 	color: var(--primary-color);
 	font-size: 0.75rem;
 	font-weight: var(--body-font-weight-light);
-
-	display: flex;
-	flex-direction: column;
-	text-align: center;
 }
 
 .copyright a {

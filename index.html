@@ -17,10 +17,10 @@
     <script src="/js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a id="logo" onclick="redirectToHome()"><img src="/img/logo.png" title="Play & Stars Logo"></a>
-            <ul>
+    <header class="flex-row flex-content-space-between flex-align-items-center">
+        <nav class="flex-row flex-content-space-between flex-align-items-center">
+            <a id="logo" class="flex-row" onclick="redirectToHome()"><img src="/img/logo.png" title="Play & Stars Logo"></a>
+            <ul class="flex-row flex-content-space-between">
                 <li><a href="#destacadas">Destacadas</a></li>
                 <li><a href="#estrella-de-la-semana">Estrella de la Semana</a></li>
                 <li><a href="#galardonadas">Películas Galardonadas</a></li>
@@ -31,22 +31,22 @@
     </header>
     
     <main>
-        <section id="home">
-            <div class="home-banner">
-                <h1>Play <img src="/img/logo.png" alt=""> Stars</h1>
-                <h2>Tiempo y Espacio nos separan, pero el Cine nos une.</h2>
+        <section id="home" class="flex-row flex-content-center flex-align-items-center">
+            <div class="home-banner flex-column flex-content-center flex-align-items-center">
+                <h1 class="text-center">Play <img src="/img/logo.png" alt=""> Stars</h1>
+                <h2 class="text-center">Tiempo y Espacio nos separan, pero el Cine nos une.</h2>
             </div>
         </section>
 
         <section id="destacadas">
             <hr>
             <h2>Películas Destacadas</h2>
-            <div class="card-container">
-                <div class="card">
-                    <div class="poster">
+            <div class="card-container flex-row">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/cries-and-whispers.jpg" title="Cries & Whispers">
                     </div>
-                    <div class="title">
+                    <div>
                         <h3>Cries & Whispers</h3>
                     </div>
                     <div class="star-rating">
@@ -60,11 +60,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, aspernatur? Eum odio laborum aliquam nam esse a sint reprehenderit impedit, at rem corrupti, voluptatum deserunt suscipit aperiam, incidunt earum consequuntur.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="poster">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/woman-in-the-dunes.jpg" title="Woman in the Dunes">
                     </div>
-                    <div class="title">
+                    <div>
                         <h3>Woman in the Dunes</h3>
                     </div>
                     <div class="star-rating">
@@ -78,11 +78,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, aspernatur? Eum odio laborum aliquam nam esse a sint reprehenderit impedit, at rem corrupti, voluptatum deserunt suscipit aperiam, incidunt earum consequuntur.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="poster">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/girl-with-hyacinths.jpg" title="Girl with Hyacinths">
                     </div>
-                    <div class="title">
+                    <div>
                         <h3>Girl with Hyacinths</h3>
                     </div>
                     <div class="star-rating">
@@ -96,11 +96,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, aspernatur? Eum odio laborum aliquam nam esse a sint reprehenderit impedit, at rem corrupti, voluptatum deserunt suscipit aperiam, incidunt earum consequuntur.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="poster">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/persona.jpg" title="Persona">
                     </div>
-                    <div class="title">
+                    <div>
                         <h3>Persona</h3>
                     </div>
                     <div class="star-rating">
@@ -114,11 +114,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, aspernatur? Eum odio laborum aliquam nam esse a sint reprehenderit impedit, at rem corrupti, voluptatum deserunt suscipit aperiam, incidunt earum consequuntur.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="poster">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/the-apartment.jpg" title="The Apartment">
                     </div>
-                        <div class="title">
+                        <div>
                             <h3>The Apartment</h3>
                         </div>
                         <div class="star-rating">
@@ -138,8 +138,8 @@
         <section id="estrella-de-la-semana">
             <hr>
             <h2>Estrella de la semana</h2>
-            <div class="star-container">
-                <div class="star-profile">
+            <div class="star-container flex-column">
+                <div class="star-profile flex-row flex-align-items-center">
                     <div class="portrait">
                         <img src="/img/stars/david-lynch.jpeg" title="David Lynch">
                     </div>
@@ -149,7 +149,7 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt saepe molestiae asperiores iste eveniet accusantium corporis maxime officia ut? Sit corporis dolores itaque dignissimos quod obcaecati nobis architecto quibusdam.</p>
                     </div>
                 </div>
-                <div class="comments">
+                <div class="comments flex-row flex-align-items-center">
                     <div class="comment-container">
                         <p class="comment"><span class="quotation-mark">&#10077;</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta cumque architecto reprehenderit. Corporis, excepturi, possimus cupiditate quae iste necessitatibus, asperiores autem illum facilis quos praesentium in exercitationem eaque consectetur? Ipsa.<span class="quotation-mark">&#10078;</span></p>
                         <p class="comment-by">- Naomi Watts</p>
@@ -170,12 +170,12 @@
         <section id="galardonadas">
             <hr>
             <h2>Películas Galardonadas</h2>
-            <div class="card-container">
-                <div class="card">
-                    <div class="poster">
+            <div class="card-container flex-row">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/cries-and-whispers.jpg" title="Cries and Whispers">
                     </div>
-                    <div class="title">
+                    <div>
                         <h3>Cries & Whispers</h3>
                     </div>
                     <div class="awards">
@@ -185,11 +185,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, aspernatur? Eum odio laborum aliquam nam esse a sint reprehenderit impedit, at rem corrupti, voluptatum deserunt suscipit aperiam, incidunt earum consequuntur.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="poster">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/the-apartment.jpg" title="The Apartment">
                     </div>
-                    <div class="title">
+                    <div>
                         <h3>The Apartment</h3>
                     </div>
                     <div class="awards">
@@ -206,12 +206,12 @@
         <section id="estrenos">
         <hr>
             <h2>Próximos Estrenos</h2>
-            <div class="card-container">
-                <div class="card">
-                    <div class="poster">
+            <div class="card-container flex-row">
+                <div class="card flex-column flex-align-items-center text-center">
+                    <div class="poster flex-column flex-content-center flex-align-items-center">
                         <img src="/img/posters/metropolis.jpg" title="Metropolis">
                     </div>
-                    <div class="title">
+                    <div>
                         <h3>Metropolis</h3>
                     </div>
                     <p class="fecha-estreno">24/12/2023</p>
@@ -223,12 +223,12 @@
         </section>
     </main>
     
-    <footer>
-        <div id="contacto" class="contact-container">
+    <footer class="flex-column">
+        <div id="contacto" class="contact-container flex-row">
             <div class="contact-form-container">
                 <h2>Contáctanos</h2>
                 
-                <form id="contact-form">
+                <form id="contact-form" class="flex-column flex-align-items-center">
                     <input type="text" id="name" placeholder="Nombre" required>
                     <input type="email" id="email" placeholder="E-mail" required>
                     <textarea id="message" placeholder="Mensaje" required></textarea>
@@ -245,7 +245,7 @@
             </div>
         </div>
         <hr>
-        <div class="copyright">
+        <div class="copyright flex-column text-center">
             <p>Copyright © 2023 Play & Stars. Todos los derechos reservados.</p>
             <p>Íconos creados por <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Fathema Khanom - Flaticon</a>. Posters proveídos por <a href="https://www.themoviedb.org/" title="Film Posters">The Movie Database.</a></p>
             <p></p>
