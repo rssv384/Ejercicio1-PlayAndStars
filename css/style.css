@@ -75,10 +75,6 @@ p {
 .text-center {
 	text-align: center;
 }
-
-.sm-hide {
-	display: none;
-}
 /* #endregion */
 
 /* #region HEADINGS */
@@ -545,7 +541,7 @@ footer hr {
 		padding: 10px 40px;
 	}
 
-	nav ul {
+	.sm-hide {
 		display: none;
 	}
 
